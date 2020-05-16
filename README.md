@@ -26,27 +26,49 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+The map method receives a function as a parameter. Then it applies it on each element and returns an entirely new array populated with the results of calling the provided function. Like map , the forEach() method receives a function as an argument and executes it once for each array element. However, instead of returning a new array like map, it returns undefined.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher-order function is a function that takes another function(s) as an argument(s) and/or returns a function to its callers.
+
+A callback function is a function that is passed to another function with the expectation that the other function will call it.
 
 3. What is closure?
 
+A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function’s variables — a scope chain.
+
+
+
 4. Describe the four rules of the 'this' keyword.
 
+Whenever a function is contained in the global scope, the value of this inside of that function will be the window object.
+
+Whenever a function is called by a preceding dot, the object before that dot is this.
+
+Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+
+Whenever JavaScript’s call or apply method is used, this is explicitly defined.
+
+
+
 5. Why do we need super() in an extended class?
+
+The super keyword in JavaScript is used in order to call the methods of the parent class. By itself, super() is used within a constructor function to call the parent constructor function.
 
 ### Task 1 - Project Set up
 
 Follow these steps to set up and work on your project:
 Make sure you clone the branch that the TK links to: the vnext branch, NOT master!
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [ done] Create a forked copy of this project.
+- [ done ] Add TL as collaborator on Github.
+- [ done ] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [ done ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [ done ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [ done ] You are now ready to build this project with your preferred IDE
+- [ done ] Implement the project on your Branch, committing changes regularly.
+- [ done ] Push commits: git push origin `<firstName-lastName>`.
 
 
 
